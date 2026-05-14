@@ -462,6 +462,10 @@ function showQuestions() {
   if (shown % 2 === 0) {
     const questionsDiv = document.getElementById("questionsDiv");
     questionsDiv.style.display = "block";
+    window.scrollBy({
+      top: 300,      // pixels to scroll down
+      behavior: "smooth"
+    });
     shown ++;
   } else {
     const questionsDiv = document.getElementById("questionsDiv");
