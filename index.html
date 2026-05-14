@@ -244,7 +244,24 @@ de les publicacions del curs 2026-2027.</p>
   </div>
 </div>
 
+
 <div class="strip">
+  <div class="container" style="padding: 50px;">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12 col-lg-12">
+         <p style="font-family: MyCustomFontMerry; margin-top: 20px;font-size: 34px; margin-bottom: 50px; line-height: 1.2;">Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum Lorep Ipsum </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12 col-lg-12 text-center">
+        <button class="custom-btn" margin-top: 15px;" onclick="showQuestions()">Tens alguna pregunta?</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="strip-grey" style="display: none;" id="questionsDiv">
   <div class="container" style="padding: 50px;">
     <div class="row justify-content-start">
       <div class="col-12">
@@ -436,6 +453,24 @@ clipeus fatetur, mira inter...</p>
   observer.observe(bar);
 </script>
 -->
+
+<script>
+var shown = 0;
+
+function showQuestions() {
+
+  if (shown % 2 === 0) {
+    const questionsDiv = document.getElementById("questionsDiv");
+    questionsDiv.style.display = "block";
+    shown ++;
+  } else {
+    const questionsDiv = document.getElementById("questionsDiv");
+    questionsDiv.style.display = "none";
+    shown ++;
+  }
+
+}
+</script>
   </div>
   <div class="footer">
   <div class="container">
